@@ -1,11 +1,3 @@
-<?php
-
-use function Livewire\Volt\{state};
-
-//
- 
-?>
-
 <x-company-profile-layout>
     {{-- <style>
         * {
