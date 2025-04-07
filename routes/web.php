@@ -1,9 +1,11 @@
 <?php
 
-use App\Livewire\Pages\Admin\TourDestination\Index;
 use Illuminate\Support\Facades\Route;
+use App\Livewire\Pages\Admin\TourDestination\Index;
 
 // Route::view('/dashboard', 'welcome')->name('dashboard');
+
+// Route::redirect('/', '/company-profile')->name('company-profile.index');
 
 Route::name('company-profile.')->group(function() {
     Route::view('/', 'livewire.pages.company-profile.index')->name('index');
