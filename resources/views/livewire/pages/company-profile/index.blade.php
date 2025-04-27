@@ -10,7 +10,7 @@
             <img src="{{ asset('storage/uploads/images/water-castle.jpg') }}" alt="water-castle.jpg" class="block object-cover object-center w-full h-full">
             <div class="absolute top-0 bottom-0 left-0 right-0 bg-gradient-to-br bg-gradient from-black/90 to-black/30"></div>
             <x-container class="absolute flex flex-col justify-between w-full py-12 text-center -translate-x-1/2 -translate-y-1/2 md:text-start top-1/2 left-1/2">
-                    <h1 class="mb-4 text-3xl text-white sm:text-5xl lg:text-7xl">Wisata Air <br>Wong Pulungan</h1>
+                    <h1 class="mb-4 text-3xl text-white sm:text-5xl lg:text-7xl">Wisata Air Panas <br>Wong Pulungan</h1>
                     {{-- <div>
                         <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 text-xl">Lorem</button>
                     </div> --}}
@@ -28,7 +28,7 @@
                     Your browser does not support the video tag.
                 </video>   --}}
                 <div class="overflow-hidden shadow-xl rounded-xl aspect-video m-auto md:w-3/4 lg:w-full">
-                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/u31qwQUeGuM?si=2GRFSQ69jI9mieVX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe class="w-full h-full" src="https://youtube.com/watch?v=u30J-bgcu_c&si=gGXrvZCXE39yVgzW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
         </x-container>
@@ -114,7 +114,7 @@
                             <button class="rounded-full border-2 border-blue-500 inline-block group-hover:scale-110 transition">
                                 <svg class="w-12 h-12 text-blue-500 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m10 16 4-4-4-4"/>
-                                </svg>                          
+                                </svg>
                             </button>
                         </a>
                     </x-slot:custom>
