@@ -2,9 +2,12 @@
 
 namespace Database\Seeders;
 
+use App\Models\Tour;
 use App\Models\User;
+use App\Models\Vendor;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\Hash;
 
 class DatabaseSeeder extends Seeder
 {
@@ -15,9 +18,19 @@ class DatabaseSeeder extends Seeder
     {
         // User::factory(10)->create();
 
-        User::factory()->create([
-            'name' => 'Test User',
-            'email' => 'test@example.com',
+        User::create([
+            'name' => 'Admin',
+            'email' => 'admin@gmail.com',
+            'level' => 1,
+            'password' => Hash::make('password')
         ]);
+
+        User::factory(10)->create()->each(function($user) {
+            Vendor::factory()->create([
+                'user_id' => $user->id
+            ]);
+        });
+
+        Tour::factory(5)->create();
     }
 }
